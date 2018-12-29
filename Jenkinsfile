@@ -1,6 +1,10 @@
-node any
-stage ('Pre-Build') {
-    steps {
-        sh 'ls'
+pipeline {
+    node any
+    stages {
+        stage ('Pre-Build') {
+            steps {
+                sh 'ls'
+            }
+        }
     }
 }
